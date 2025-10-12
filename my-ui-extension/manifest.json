@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Popup UI Example",
+  "name": "TX IFTA Form Filler",
   "version": "1.0",
-  "description": "Popup with buttons and text areas.",
+  "description": "Fill TX IFTA forms quickly",
+  "permissions": ["tabs", "scripting", "activeTab"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icons/icon-32.png"
-  },
-  "permissions": ["activeTab", "scripting"]
+    "default_popup": "popup.html"
+  }
 }
