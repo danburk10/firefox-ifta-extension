@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 // Helper to parse CSV/TSV input
 function txtJSON(data, delimiter = ",") {
   const lines = data.split("\n");
@@ -86,7 +87,7 @@ function clearForm() {
 }
 
 // Button: Fill form
-document.getElementById("btn1").addEventListener("click", async () => {
+  document.getElementById("btn1").addEventListener("click", async () => {
   const largeTextEl = document.getElementById("largeText");
   const charInputEl = document.getElementById("charInput");
   const largeText = largeTextEl.value.trim(); //text input
@@ -111,4 +112,5 @@ document.getElementById("btn2").addEventListener("click", async () => {
     target: { tabId: tab.id },
     func: clearForm
   });
+});
 });
